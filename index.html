@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- FONT AWESOME SCRIPT -->
+  <script src="https://kit.fontawesome.com/fadeb3a52a.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background: #080808; color: #fff">
+  <!-- HEADER SECTION -->
+  <div id="header">
+
+    <div class="container">
+
+      <!-- nav-bar-->
+      <nav>
+        <!-- name logo -->
+        <img src="images/logo2.png" class="logo" />
+
+        <!-- SIDE MENU -->
+        <ul id="sidemenu">
+          <li><a href="#header" class="sdf">Home</a></li>
+          <li><a href="#about" class="sdf">About</a></li>
+          <li><a href="#services" class="sdf">Services</a></li>
+          <li><a href="#portfolio" class="sdf">Portfolio</a></li>
+          <li><a href="#contact" class="sdf">Contact</a></li>
+          <!-- close menu icon  -->
+          <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+
+        <!-- hamburger for opening menu -->
+        <i class="fas fa-bars" onclick="openmenu()" style="position: relative; left: 100px;"></i>
+      </nav>
+
+      <!-- Header text -->
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi, I'm <span>Raynald</span><br><span style="color: aquamarine; position: relative; ">Gitau</span></h1>
+        <!--user profile picture  -->
+        <img class="users" src="images/user.jpg" alt="profile picture">
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT SECTION-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <!-- user profile pic 2 -->
+          <img src="images/user.jpg" alt="">
+        </div>
+        <!-- About me section -->
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p> I am a multifaceted individual with a passion for gaming, full-stack development, and basketball. Growing
+            up,I discovered my love for gaming at a young age, spending countless hours mastering various virtual worlds
+            and honing my skills.In my teenage years,I found a new interest in coding and technology, diving into the
+            world of full-stack development. With dedication and determination, I taught myself the intricacies of
+            programming languages and web development frameworks, quickly becoming proficient in both front-end and
+            back-end technologies.
+
+            In addition to my love for gaming and coding, I also found joy and fulfillment on the basketball court. For
+            two years, I dedicated myself to the sport, refining my skills, and embracing the camaraderie of teamwork.
+            Through basketball, I acquired discipline, perseverance, and collaboration, traits that have since shaped my
+            approach to life and work.
+
+            Today, I continue to pursue my passions with unwavering enthusiasm. Whether I am immersed in a challenging
+            coding project, competing in an intense basketball game, or connecting with fellow gamers online, I thrive
+            on the thrill of exploration and the pursuit of excellence in all that I do. I remain committed to pushing
+            boundaries, embracing new opportunities, and striving for greatness in every aspect of my life.</p>
+
+          <!-- Tabs for skills, experience and education  -->
+          <div class="tab-titles">
+            <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <!-- Tab contents -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+              <li><span>App Development</span><br>Building Android apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024 - Current</span><br>Full Stack Training at IST</li>
+              <li><span>2023 -2024</span><br>Android Development Training at Emobilis</li>
+              <li><span>2022 -2023</span><br>Tutor For basic HTML & CSS</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2024</span><br>Diploma from IST </li>
+              <li><span>2023</span><br>Certificate from Emobilis </li>
+              <li><span>2021</span><br>Basics from Aga Khan HighSchool</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SERVICES SECTION  -->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <!-- services list -->
+      <div class="services-list">
+        <!-- individual services -->
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            <br> 1.Client Consultation: Understanding the client's requirements, target audience, and brand identity is
+            crucial. This involves discussing design preferences, functionality needs, and desired features.<br>
+
+            <br>2.Design and Development: Service providers use a combination of graphic design, coding languages (such
+            as HTML, CSS, JavaScript), and content management systems (like WordPress or Drupal) to create visually
+            appealing and functional websites.<br>
+
+            <br>3.Responsive Design: Ensuring that websites are compatible with different devices and screen sizes is
+            essential. Responsive design techniques allow websites to adapt seamlessly to various platforms, including
+            desktops, tablets, and smartphones.<br>
+          </p>
+          <a href="https://github.com/rayynaldgitau">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-uikit"></i>
+          <h2>UI/UX Design</h2>
+          <p>
+          <h4>1.User Experience (UX) design</h4><br>
+          >Conducting user research to understand target audience needs and preferences.<br>
+          >Creating wire frames and prototypes to visualize the user journey and interaction flow.<br>
+          >Testing prototypes with users to gather feedback and iterate on designs.<br>
+          >Collaborating with developers to ensure seamless implementation of designs.
+          <br>
+          <br>
+          <h4>2.User Interface (UI) design</h4><br>
+
+          >Designing visually appealing interfaces that align with brand guidelines.<br>
+          >Creating high-fidelity mockups and design assets for web and mobile applications.<br>
+          >Paying attention to typography, color schemes, and visual hierarchy to enhance usability.<br>
+          >Optimizing designs for various devices and screen sizes to ensure consistency across platforms.<br>
+          </p>
+          <a href="https://github.com/rayynaldgitau">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-android"></i>
+          <h2>App Design</h2>
+          <p>
+
+            <br>1.UI/UX design: Creating visually appealing and user-friendly interfaces for mobile apps.<br>
+            <br>2.Prototyping: Developing interactive prototypes to demonstrate app functionality and design
+            concepts.<br>
+            <br>3.User research: Conducting surveys, interviews, and usability testing to gather insights and improve
+            user experience.<br>
+            <br>4.App development: Collaborating with developers to implement design elements and ensure consistency
+            across platforms.<br>
+            <br>5.Branding and identity: Establishing a cohesive brand image through logo design, color schemes, and
+            typography.<br>
+            <br>6.Consultation: Providing guidance and recommendations on best practices for app design and user
+            experience optimization.<br>
+          </p>
+          <a href="https://github.com/rayynaldgitau">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO SECTION -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <!-- work list -->
+      <div class="work-list">
+
+        <div class="work">
+          <img src="images/work1.png" alt="">
+          <div class="layer">
+            <h3>Restaurant App</h3>
+            <p>A neighborhood friendly app to let you relax as your food comes to you </p>
+            <a href="https://github.com/rayynaldgitau/resturant2.0"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/work2.png" alt="">
+          <div class="layer">
+            <h3>Gaming Cafe Website</h3>
+            <p>Out of the cafe and into your home with an app that allows you to order your favorite espressos and book
+              your gaming room</p>
+            <a href="https://github.com/rayynaldgitau/gamingcafes"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/work3.png" alt="">
+          <div class="layer">
+            <h3>Shipping Website</h3>
+            <p>A more modernized website using django to manage a shipping business</p>
+            <a href="https://github.com/rayynaldgitau/Ecommerce"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/rayynaldgitau" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- CONTACT SECTION -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+
+          <!-- contact details -->
+          <p><i class="fa-solid fa-envelope"></i> raynaldgitau@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 0790800668</p>
+
+          <!-- social icons -->
+          <div class="social-icons">
+            <a href="https://www.instagram.com/iiamshaker/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Iiamshaker"><i class="fa-brands fa-x-twitter"></i></a>
+
+            <!-- CV download Button-->
+          </div>
+          <a href="images/My CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <!--Contact Form   -->
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+          </form>
+
+          <!-- Message Display area -->
+          <span id="message"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- SCRIPT FOR SIDE MENU -->
+  <script>
+    // Get the side menu element by its ID
+    var sidemenu = document.getElementById("sidemenu");
+
+    // function to open the side menu by setting its right property to zero
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    // function to close the side menu by setting its right property to -200px
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <!-- Script for tabs -->
+  <script>
+    // get all elements with the class 'tab-links' and 'tab-contents'
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    // function to open a specific tab based on its name 
+    function opentab(tabname) {
+      // remove the 'active-link' from all tab links
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+
+      // remove the 'active-tab' from all tab contents
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+
+      // add the 'active-link' class to the clicked tab link
+      event.currentTarget.classList.add("active-link");
+
+      // add the active tab class to the respective tab content
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <!-- script for form submission -->
+  <script>
+    // Url of the google sheets to handle form submission
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbznarYsxk4yXUGAnfgVm7GpbqBfZdzYcbNYQwKu-gmT5qO8aN9rmJ-mSbK6fZFRNQ4/exec'
+
+    //Get the form element by name
+    const form = document.forms['submit-to-google-sheet']
+
+    // Get the form element by Id
+    const message = document.getElementById("message")
+
+    // add event listener to the form on submit
+    form.addEventListener('submit', e => {
+
+      // prevent the default form submission behaviour
+      e.preventDefault()
+
+      // perform a POST request to the google sheet script URL with form data
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          // show a message of successful post to the sheets
+          message.innerHTML = "Message sent successfully!!"
+          // set a timeout to clear the Success message in the input field
+          setTimeout(function () {
+            message.innerHTML = ""
+          }, 500)
+          // clears the input fields after message sent 
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
